@@ -1,0 +1,53 @@
+=begin
+
+                            Online Perl Compiler.
+                Code, Compile, Run and Debug Perl script online.
+Write your code in this editor and press "Run" button to execute it.
+
+=end
+=cut
+=begin
+
+                            Online Perl Compiler.
+                Code, Compile, Run and Debug Perl script online.
+Write your code in this editor and press "Run" button to execute it.
+
+=end
+=cut
+use Time::HiRes qw[gettimeofday tv_interval];
+my @names = ("John Paul", "Lisa", "Kumar");
+my @range = ("a".."z");
+%data = ('John Paul', 45, 'Lisa', 30, 'Kumar', 40);
+%testHash = ();
+my @a = (1..100);
+my @b = (1..3);
+$start = gettimeofday();
+for my $i (@a){
+    $randomString = "";
+    for my $j (@b)
+        {
+            
+            $randomInt = (int(rand(25)));
+            print($randomInt," ");
+            $randomChar = $range[$randomInt];
+            print($randomChar, " ");
+            $randomString .= $randomChar;
+            
+        }
+    print ($randomString,"\n");
+    $testHash{$randomString} = (int(rand(40)));
+}
+  
+
+while(($key, $value) = each (%testHash))
+{
+    print "$key : $testHash{$key}\n";
+    $testHash{$key} =  $testHash{$key} * 1000 %3; 
+}
+$end = gettimeofday();
+$elapsed = $end  - $start;
+
+#floating seconds : 0.00118207931518555  
+print "Time elapsed: $elapsed\n";
+
+print "Hello World";
