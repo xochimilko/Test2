@@ -1,0 +1,19 @@
+var x; 
+x = 15;
+function sub1(){
+
+	document.write("x = " + x + "");
+    sub3();
+    }
+function sub2()
+{
+	var x; 
+    x = 12;
+    sub1();
+}
+function sub3()
+{
+	var x;
+    x = 13;
+}
+sub2();
