@@ -1,0 +1,23 @@
+#https://replit.com/@KimLuviano/WellgroomedCylindricalPerimeter
+a = 1
+b = 2
+c = 4
+def sub1():
+  z = 7
+  a = 10
+  b = 0
+  print(b)
+  print(a)
+def sub2():
+  a = 40
+  t = 2
+  s = 100
+  print(a)
+  sub1()
+def sub3():
+  b = 10
+  z = 20
+  d = 11
+  print(b)
+  sub2()
+sub3()
